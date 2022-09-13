@@ -1,11 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
-
-h1 {
-    font-family: AllianceNo1;
-    font-size: 10em;
+* {
+    margin: 0;
+    padding: 5px;
+    font-family: "Alliance-no1", sans-serif;
 }
-
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url(C:\Users\Jackson\Documents\GitHub\WEB503-A2-2022\seoul-wallpaper.jpg);
 }
