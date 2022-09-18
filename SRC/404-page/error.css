@@ -8,12 +8,12 @@
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: 70% 70%;
+    background-position: 70% 90%;
     background-size: 500px;
+    z-index: -1;
 }
 .banner-btn {
-    padding-left: 500px;
-    padding-top: 50px;
+    margin: 70px 0;
 }
 .banner-btn a {
     width: 350px;
@@ -32,10 +32,10 @@
 .banner-btn a span {
     width: 0%;
     height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     background: rgb(11, 125, 179);
+    position: absolute;
     z-index: -1;
     transition: 0.5s;
 }
@@ -55,3 +55,62 @@
     font-size: 35px;
     font-family: "Alliance-no1", sans-serif;
 }
+@media screen and (max-width: 1100px) {
+    #banner {
+        background-size: 400px;
+        background-position: 80% 90%;
+    }
+    .banner-text h1 {
+        font-size: 150px;
+    }
+    .banner-text p {
+        font-size: 35px;
+    }
+    .banner-text {
+        text-align: center;
+        padding-right: 300px;
+    }
+}
+@media screen and (max-width: 720px) {
+    #banner {
+        background-size: 500px;
+        background-position: 50% 90%;
+    }
+    .banner-text h1 {
+        font-size: 150px;
+    }
+    .banner-text p {
+        font-size: 30px;
+    }
+    .banner-btn a {
+        width: 250px;
+        font-size: 15px;
+    }
+    .banner-text {
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #banner {
+        background-size: 300px;
+        background-position: 50% 90%;
+    }
+    .banner-text h1 {
+        font-size: 100px;
+    }
+    .banner-text p {
+        font-size: 20px;
+    }
+    .banner-btn a {
+        width: 200px;
+        font-size: 15px;
+    }
+    .banner-text {
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+
