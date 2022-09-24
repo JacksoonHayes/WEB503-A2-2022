@@ -3,16 +3,89 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>WEB503 A1 Webpage</title>
-        <meta name="description" content="">
+        <title>Home page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://blogfonts.com/css/aWQ9MTUyOTE4JnN1Yj05MTgmYz1hJnR0Zj1EZWdhcmlzbStTdHVkaW8rLStBbGxpYW5jZStOby4xK0xpZ2h0Lm90ZiZuPWFsbGlhbmNlLW5vMQ/Alliance No.1.otf" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="background"
-    
+        <section id="banner">
+            <img src="/img/logo.png" class="logo">
+            <div class="banner-text">
+                <h1>Welcome to my page!</h1>
+                <p>place.holderplace.holderplace.holderplace.<br>holderplace.holderplace.holder</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>Place holder!</a>
+            </div>
+        </section>
 
+                         <!-- Navigation bar-->
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="home.html#banner"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="home.html#footer"><i class="fa fa-phone"></i>CONTACT</a></li>
+            <li><a href="#">place.holder</a></li>
+            <li><a href="#">place.holder</a></li>
+            <li><a href="/SRC/404-page/error.html">place.holder</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="/img/menu-icon.png" id="menu">
+    </div>
+
+    <section id="feature">
+        <div class="title-text">
     
+        </div>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var menuBtn = document.getElementById("sideNav");
+        var menuBtn = document.getElementById("menu");
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "/img/close-icon.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "/img/menu-icon.png";
+            }
+        }
+    </script>
+    <div class="info">
+        <h3>About me!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br> Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+                                                   <!-- Footer -->
+    <section id="footer">
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Contact</h1>
+            <p><i class="fa fa-map-marker"></i>322 Hardy Street, Nelson 7010</p>
+            <p><i class="fa fa-phone"></i>0271234567</p>
+            <p><i class="fa fa-paper-plane"></i>Jackson-hayes@live.nmit.ac.nz</p>
+        </div>
+        <div class="footer-right">
+            <h1>Follow</h1>
+            <p><a href="https://github.com/JacksoonHayes"><i class="fa fa-github"></i>Github</a></p>
+            <p><a href="/SRC/404-page/error.html"><i class="fa fa-linkedin"></i>LinkedIn</a></p>
+            <p><a href="/SRC/404-page/error.html"><i class="fa fa-facebook"></i>Facebook</a></p>
+            <p><a href="/SRC/404-page/error.html"><i class="fa fa-instagram"></i>Instagram</a></p>
+        </div>
+    </div>
+    </section>
+        
     </body>
 </html>
