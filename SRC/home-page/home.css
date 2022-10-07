@@ -7,7 +7,7 @@ body {
     font-family: "Alliance-no1", sans-serif;
 }
 #banner {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(/img/test-background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(/img/test-background.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -19,6 +19,7 @@ body {
     top: 4%;
     left: 0;
 }
+                                        /* Navigation bar */
 .banner-text {
     text-align: center;
     color: white;
@@ -67,7 +68,7 @@ body {
     height: 100vh;
     position: fixed;
     top: 0;
-    background:rgb(24, 24, 24);
+    background:rgb(34, 34, 34);
     z-index: 4;
     padding-top: 40px;
     transition: 0.4s;
@@ -75,30 +76,21 @@ body {
 nav ul li {
     display: block;
     list-style: none;
-    margin: 60px 30px;
     position: relative;
+    padding: 20px 0;
+    padding-left: 20px;
+    margin: 30px 0;
+}
+nav ul li:hover {
+    background-color: rgb(48, 48, 48);
 }
 nav ul li a {
     text-decoration: none;
     color: rgb(245, 245, 245);
 }
-nav ul li a::after {
-    content: "";
-    width: 0%;
-    height: 3px;
-    background: rgb(200, 30, 0);
-    display: block;
-    left: 0;
-    bottom: -3px;
-}
-nav ul li a:hover::after {
-    width: 50%;
-    transition: 0.3s;
-}
 nav ul li a i {
-    padding-right: 5px;
+    padding-right: 20px;
 }
-
 
 #menuBtn {
     width: 50px;
@@ -118,15 +110,35 @@ nav ul li a i {
 
 
                                             /* about me section */
-.info {
+.info-box {
+    padding: 100px 0;
+    margin: auto;
     text-align: center;
-    background-color: rgb(50, 50, 75);
-    padding: 50px 0;
-    color: white
+    background-color: rgb(240, 240, 240);
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.info {
+    flex-basis: 50%;
+}
+.info-img {
+    flex-basis: 50%;
+    margin: auto;
+}
+.info-img img {
+    width: 650px;
+    height: 500px;
+    border: 3px solid rgb(175, 35, 0);
+    border-radius: 10px;
+    opacity: 0.9;
 }
 .info h3 {
+    font-weight: 50;
     font-size: 30px;
     font-family: "poppins", sans-serif;
+    color: rgb(175, 35, 0)
 }
 .info p {
     font-size: 20px;
@@ -136,13 +148,14 @@ nav ul li a i {
 
 
 
+
                                             /* footer */
 #footer {
     padding: 50px 0 20px;
-    background: linear-gradient(rgb(50, 50, 75), rgb(0, 0, 0, 0.65));
     font-family: 'Poppins', sans-serif;
     position: relative;
     z-index: 3;
+    background-color: rgb(240, 240, 240);
 }
 .footer-row {
     width: 100%;
@@ -161,14 +174,14 @@ nav ul li a i {
 }
 .footer-row h1 {
     margin: 20px 0;
-    color: rgb(20, 20, 20);
+    color: rgb(0, 0, 0);
 }
 .footer-left i, .footer-right i{
     padding-right: 10px;
     font-size: 20px;
 }
 .footer-right a, .footer-left p{
-    color: lightgrey;
+    color: rgb(124, 124, 124);
 }
 @media screen and (max-width: 1100px) {
     .logo {

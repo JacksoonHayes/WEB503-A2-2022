@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 * {
     margin: 0;
     padding: 0;
@@ -67,21 +66,8 @@ nav ul li {
     position: relative;
 }
 nav ul li a {
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(245, 245, 245);
-}
-nav ul li a::after {
-    content: "";
-    width: 0%;
-    height: 3px;
-    background: rgb(200, 30, 0);
-    display: block;
-    left: 0;
-    bottom: -3px;
-}
-nav ul li a:hover::after {
-    width: 50%;
-    transition: 0.3s;
 }
 nav ul li a i {
     padding-right: 5px;
@@ -191,4 +177,3 @@ nav ul li a i {
         text-align: center;
     }
 }
->>>>>>> ee8d795de036a15caf5ef6e886265eb1aa8bf02d
