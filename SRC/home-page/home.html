@@ -38,15 +38,9 @@
         </nav>
     </div>
     <div id="menuBtn">
-        <img src="/img/menu-icon.png" id="menu">
+        <img src="/img/menu-icon.png">
     </div>
-
-    <section id="feature">
-        <div class="title-text">
     
-        </div>
-    </section>
-
     <script>
         var menuBtn = document.getElementById("menuBtn");
         var menuBtn = document.getElementById("sideNav");
@@ -57,10 +51,10 @@
         menuBtn.onclick = function () {
             if(sideNav.style.right == "-250px") {
                 sideNav.style.right = "0";
-                menu.src = "/img/close-icon.png";
+                menu.src = "https://cdn4.iconfinder.com/data/icons/social-messaging-ui-coloricon-1/21/39-512.png";
             } else {
                 sideNav.style.right = "-250px";
-                menu.src = "/img/menu-icon.png";
+                menu.src = "https://cdn4.iconfinder.com/data/icons/social-messaging-ui-coloricon-1/21/39-512.png";
             }
         }
     </script>
