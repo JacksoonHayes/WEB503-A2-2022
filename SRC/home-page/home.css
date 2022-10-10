@@ -141,6 +141,7 @@ nav ul li a i {
     color: rgb(175, 35, 0)
 }
 .info p {
+    margin: 0 25px;
     font-size: 20px;
     font-style: italic;
     padding: 20px 0;
