@@ -119,6 +119,7 @@ nav ul li a i {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    font-family: "poppins", sans-serif;
 }
 .info {
     flex-basis: 50%;
@@ -137,12 +138,11 @@ nav ul li a i {
 .info h3 {
     font-weight: 50;
     font-size: 30px;
-    font-family: "poppins", sans-serif;
     color: rgb(175, 35, 0)
 }
 .info p {
-    margin: 0 25px;
-    font-size: 20px;
+    margin: 0 50px;
+    font-size: 18px;
     font-style: italic;
     padding: 20px 0;
     text-align: left;
