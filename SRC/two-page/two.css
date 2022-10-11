@@ -2,25 +2,33 @@
     margin: 0;
     padding: 0;
 }
-                                        /* Home page and background */
+                                        /* Header and background */
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
 body {
     font-family: "Alliance-no1", sans-serif;
 }
 #banner {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(/img/test-background.jpg);
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)), url(https://ediblevancouverisland.ediblecommunities.com/sites/default/files/styles/recipe_banner/public/images/recipe/image1.jpeg?itok=8U_R5yia
+    );
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100%;
+    text-align: center;
+    color: white;
 }
-.logo {
-    width: 250px;
-    position: absolute;
-    top: 4%;
-    left: 0;
+.banner-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    padding-top: 150px;
 }
 
-                                        /* Navigation bar */
+                                       /* Navigation bar */
 #sideNav {
     width: 250px;
     height: 100vh;
@@ -65,6 +73,52 @@ nav ul li a i {
     width: 40px;
     height: 40px;
 }
+                                           /* Content */
+.row {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+}
+.content-col {
+    padding: 30px 0;
+}
+.content-col h1 {
+    padding-top: 0;
+}
+.content-col p {
+    padding: 15px 0 25px;
+}                       
+.content-col img {
+    width: 500px;
+    border: 3px solid rgb(175, 35, 0);
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                             /* footer */
 #footer {
@@ -72,7 +126,7 @@ nav ul li a i {
     font-family: 'Poppins', sans-serif;
     position: relative;
     z-index: 3;
-    background-color: rgb(240, 240, 240);
+    background-color:rgb(245, 245, 245)
 }
 .footer-row {
     width: 100%;
@@ -90,17 +144,21 @@ nav ul li a i {
     text-align: right;
 }
 .footer-row h1 {
+    font-size: 18px;
     margin: 20px 0;
     color: rgb(0, 0, 0);
+}
+.footer-row p {
+    font-size: 14px;
 }
 .footer-left i, .footer-right i{
     padding-right: 10px;
     font-size: 20px;
+    color:rgb(175, 35, 0)
 }
 .footer-right a, .footer-left p{
     color: rgb(124, 124, 124);
 }
-
 @media screen and (max-width: 1100px) {
     .logo {
         width: 200px;
