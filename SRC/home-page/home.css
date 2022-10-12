@@ -3,9 +3,6 @@
     padding: 0;
 }
                                         /* Home page and background */
-body {
-    font-family: "Alliance-no1", sans-serif;
-}
 #banner {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(https://images.unsplash.com/photo-1554310603-d39d43033735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-size: cover;
@@ -14,10 +11,12 @@ body {
     width: 100%;
 }
 .logo {
-    width: 150px;
     position: absolute;
     top: 2%;
-    left: 2%;
+    left: 3%;
+    font-family: 'Yellowtail', cursive;
+    color:rgb(189, 68, 44);
+    font-size: 60px;
 }
                                         /* Navigation bar */
 .banner-text {
@@ -34,6 +33,7 @@ body {
 .banner-text p {
     font-size: 20px;
     font-style: italic;
+    font-family: "Alliance-no1", sans-serif;
 }
 .banner-btn {
     margin: 70px auto 0;
@@ -47,6 +47,7 @@ body {
     color: white;
     border: 0.5px solid white;
     position: relative;
+    font-family: "Alliance-no1", sans-serif;
     z-index: 1;
 }
 .banner-btn a span {
@@ -72,6 +73,7 @@ body {
     z-index: 4;
     padding-top: 70px;
     transition: 0.4s;
+    font-family: "Poppins", sans-serif;
 }
 nav ul li {
     display: block;
@@ -104,8 +106,8 @@ nav ul li a i {
     
 }
 #menuBtn img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -147,6 +149,58 @@ nav ul li a i {
     padding: 20px 0;
     text-align: left;
 }
+
+
+
+                                            /* projects */
+#projects {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+                                        
+#projects h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 50;
+    color: rgb(175, 35, 0);
+    padding: 70px 0;
+    font-family: "poppins", sans-serif;
+}
+.project-row {
+    display: flex;
+    flex-wrap: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.project-col img {
+    width: 100%;
+}
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover {
+    background: rgba(175, 30, 0, 0.6);
+}
+
+
+
+
+
 
 
 
