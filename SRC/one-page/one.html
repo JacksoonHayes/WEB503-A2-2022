@@ -3,80 +3,124 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>placeholder 1</title>
-        <meta name="description" content="">
+        <title>Page one</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
         <link href="https://blogfonts.com/css/aWQ9MTUyOTE4JnN1Yj05MTgmYz1hJnR0Zj1EZWdhcmlzbStTdHVkaW8rLStBbGxpYW5jZStOby4xK0xpZ2h0Lm90ZiZuPWFsbGlhbmNlLW5vMQ/Alliance No.1.otf" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="one.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div id="banner">
-            <img src="/img/logo.png" class="logo">
+        <div class="logo">
+            <h2>JH</h2>
         </div>
-
-
-
-
-
-        <div id="sideNav">
-            <nav>
-            <ul>
-                <li><a href="/SRC/home-page/home.html"><i class="fa fa-home"></i>HOME</a></li>
-                <li><a href="one.html#footer"><i class="fa fa-phone"></i>CONTACT</a></li>
-                <li><a href="#">place.holder</a></li>
-                <li><a href="#">place.holder</a></li>
-                <li><a href="/SRC/404-page/error.html">place.holder</a></li>
-            </ul>
-            </nav>
-        </div>
-        <div id="menuBtn">
-            <img src="/img/menu-icon.png" id="menu">
-        </div>
-    
-        <section id="feature">
-            <div class="title-text">
-        
+        <section id="banner">
+            <div class="banner-text">
+                <h1>Croissants</h1>
             </div>
         </section>
-    
-        <script>
-            var menuBtn = document.getElementById("menuBtn");
-            var menuBtn = document.getElementById("sideNav");
-            var menuBtn = document.getElementById("menu");
-    
-            sideNav.style.right = "-250px";
-    
-            menuBtn.onclick = function () {
-                if(sideNav.style.right == "-250px") {
-                    sideNav.style.right = "0";
-                    menu.src = "/img/close-icon.png";
-                } else {
-                    sideNav.style.right = "-250px";
-                    menu.src = "/img/menu-icon.png";
-                }
-            }
-        </script>
 
-<section id="footer">
+                                                                   <!-- Navigation bar--> 
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="/SRC/home-page/home.html"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="/SRC/home-page/home.html#info"><i class="fa fa-info-circle" aria-hidden="true"></i>ABOUT ME</a></li>
+            <li><a href="/SRC/home-page/home.html#projects"><i class="fa fa-book" aria-hidden="true"></i>PROJECTS</a></li>
+            <li><a href="/SRC/one-page/one.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>CROISSANTS</a></li>
+            <li><a href="/SRC/two-page/two.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>COOKIES</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="https://cdn0.iconfinder.com/data/icons/basic-7/97/13-512.png" id="menu">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var menuBtn = document.getElementById("sideNav");
+        var menuBtn = document.getElementById("menu");
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/480px-OOjs_UI_icon_close-ltr-destructive.svg.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "https://cdn0.iconfinder.com/data/icons/basic-7/97/13-512.png";
+            }
+        }
+    </script>
+                                                                <!-- Content  -->
+    <section class="content">
+        
+        <div class="row">
+            <div class="content-col">
+                <h1>INGREDIENTS</h1>
+                <ul>
+                    <p>Group 1</p>
+                    <li>1000g Strong flour (chilled)</li>
+                    <li>400-450g Cold water</li>
+                    <li>15g Salt</li>
+                    <li>30g Sugar</li>
+                    <li>60g Butter</li>
+                    <li>10g Bread improver</li>
+                    <li>20g Milk powder</li>
+                    <li>20g Fresh yeast</li>
+                    <li>2 Large eggs (100g)</li>
+                    <br>
+                    <p>Group 2</p>
+                    <li>500g Roll-in butter (chilled)</li>
+                </ul>
+                <h2>METHOD</h2>
+                <ol>
+                    <li>Combine group one, mix on slow speed for one minute, and develop on second speed<br> for 4-5 minutes. Develop the dough to around 80%.</li>
+                    <br>
+                    <li>Cover with plastic, and rest in chiller for 10 minutes.</li>
+                    <br>
+                    <li>Flatten group 2 butter into a sheet approx. 1cm thick, and keep chilled.</li>
+                    <br>
+                    <li>Process dough as per french method by rolling the dough out into a square enough that the sheet<br> of butter can be placed like a diamond and wrapped with the corners of the square piece of dough</li>
+                    <br>
+                    <li>Give the dough one half turn, cover and rest in fridge for 10 minutes (Do this 3 times).<br> This will give 135 layers.</li>
+                    <br>
+                    <li>Roll out dough to around 3.5mm thick, and cut out into triangle shapes, curl into croissant<br> shape and place on a lightly greased tray</li>
+                    <br>
+                    <li>Egg wash and prove at 30°c with a relative humidity of 70% for around 30 minutes.</li>
+                    <br>
+                    <li>Bake at 230°c for 10-15 minutes.</li>
+                </ol>
+            </div>
+            <div class="content-col">
+                <img src="https://images.unsplash.com/photo-1653460895291-d3ff89651ce8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80">
+            </div>
+        </div>
+
+    </section>
+
+                                                                  <!-- Footer -->
+    <section id="footer">
     <div class="footer-row">
         <div class="footer-left">
-            <h1>Contact</h1>
+            <h1>CONTACT</h1>
             <p><i class="fa fa-map-marker"></i>322 Hardy Street, Nelson 7010</p>
             <p><i class="fa fa-phone"></i>0271234567</p>
             <p><i class="fa fa-paper-plane"></i>Jackson-hayes@live.nmit.ac.nz</p>
         </div>
         <div class="footer-right">
-            <h1>Follow</h1>
+            <h1>FOLLOW</h1>
             <p><a href="https://github.com/JacksoonHayes"><i class="fa fa-github"></i>Github</a></p>
-            <p><a href="/SRC/404-page/error.html"><i class="fa fa-linkedin"></i>LinkedIn</a></p>
-            <p><a href="/SRC/404-page/error.html"><i class="fa fa-facebook"></i>Facebook</a></p>
-            <p><a href="/SRC/404-page/error.html"><i class="fa fa-instagram"></i>Instagram</a></p>
+            <p><a href="/SRC/404-page/error.html"><i class="fa fa-linkedin"></i>LinkedIn (In progess)</a></p>
+            <p><a href="/SRC/404-page/error.html"><i class="fa fa-instagram"></i>Instagram (In progess)</a></p>
         </div>
     </div>
     </section>
+        
     </body>
 </html>

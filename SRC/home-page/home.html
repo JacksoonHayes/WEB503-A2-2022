@@ -9,43 +9,41 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
         <link href="https://blogfonts.com/css/aWQ9MTUyOTE4JnN1Yj05MTgmYz1hJnR0Zj1EZWdhcmlzbStTdHVkaW8rLStBbGxpYW5jZStOby4xK0xpZ2h0Lm90ZiZuPWFsbGlhbmNlLW5vMQ/Alliance No.1.otf" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <div class="logo">
+            <h2>JH</h2>
+        </div>
         <section id="banner">
-            <img src="/img/logo.png" class="logo">
             <div class="banner-text">
-                <h1>Welcome to my page!</h1>
-                <p>place.holderplace.holderplace.holderplace.<br>holderplace.holderplace.holder</p>
+                <h1>Welcome!</h1>
+                <p>To my HTML and CSS portfolio website.</p>
                 <div class="banner-btn">
-                    <a href="#"><span></span>Place holder!</a>
+                    <a href="home.html#info"><span></span>Get started!</a>
+                </div>
             </div>
         </section>
 
-                         <!-- Navigation bar-->
+                                                                   <!-- Navigation bar--> 
     <div id="sideNav">
         <nav>
         <ul>
-            <li><a href="home.html#banner"><i class="fa fa-home"></i>HOME</a></li>
-            <li><a href="home.html#footer"><i class="fa fa-phone"></i>CONTACT</a></li>
-            <li><a href="#">place.holder</a></li>
-            <li><a href="#">place.holder</a></li>
-            <li><a href="/SRC/404-page/error.html">place.holder</a></li>
+            <li><a href="/SRC/home-page/home.html"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="/SRC/home-page/home.html#info"><i class="fa fa-info-circle" aria-hidden="true"></i>ABOUT ME</a></li>
+            <li><a href="/SRC/home-page/home.html#projects"><i class="fa fa-book" aria-hidden="true"></i>PROJECTS</a></li>
+            <li><a href="/SRC/one-page/one.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>CROISSANTS</a></li>
+            <li><a href="/SRC/two-page/two.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>COOKIES</a></li>
         </ul>
         </nav>
     </div>
     <div id="menuBtn">
-        <img src="/img/menu-icon.png" id="menu">
+        <img src="https://cdn0.iconfinder.com/data/icons/basic-7/97/13-512.png" id="menu">
     </div>
-
-    <section id="feature">
-        <div class="title-text">
     
-        </div>
-    </section>
-
     <script>
         var menuBtn = document.getElementById("menuBtn");
         var menuBtn = document.getElementById("sideNav");
@@ -56,33 +54,93 @@
         menuBtn.onclick = function () {
             if(sideNav.style.right == "-250px") {
                 sideNav.style.right = "0";
-                menu.src = "/img/close-icon.png";
+                menu.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/480px-OOjs_UI_icon_close-ltr-destructive.svg.png";
             } else {
                 sideNav.style.right = "-250px";
-                menu.src = "/img/menu-icon.png";
+                menu.src = "https://cdn0.iconfinder.com/data/icons/basic-7/97/13-512.png";
             }
         }
     </script>
-    <div class="info">
-        <h3>About me!</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <br> Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                                <!-- About me -->
+    <section id="info">                                                       
+    <div class="info-box">
+        <div class="info">
+            <h3>ABOUT ME!</h3>
+            <p>My name is Jackson Hayes and i have been learning how to code since the start of 2022.
+                Before then i was a full time apprentice baker, starting work as early as 2am and became qualified after 4 years.<br>
+                <br>
+                After wanting a career change and to move into an industry I have more passion for, I decided to study a Bachelors degree in I.T due to my interest in tech and sudden passion for coding after learning from youtube videos.
+                My studies have helped me develope a new set of skills including HTML, CSS, Javscript and has also helped my troubleshooting and problem solving and will be expanding on this as time goes on with the hopes to work in the tech industry.<br>
+                <br>
+                This website was built around my previous job and a couple of recipes with the current knowledge i have on HTML and CSS and will be updated as I improve and develope my coding skills.
+            </p>
+        </div>
+        <div class="info-img">
+            <img src="https://images.pexels.com/photos/3218467/pexels-photo-3218467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
     </div>
-                                                   <!-- Footer -->
+    </section>
+                                                                  <!-- Projects -->
+    <section id="projects">
+        <h1>PROJECTS</h1>
+
+        <div class="project-row">
+            <div class="project-col">
+                <img src="https://images.pexels.com/photos/6466141/pexels-photo-6466141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="layer">
+                        <h3>WINDOWS SERVER PROJECT</h3>
+                        <h4>Completed - September 19th 2022</h4>
+                        <p>For this project, we were tasked with creating a server and domain using Windows Server 2019.
+                            On this server we had to use features such as ADDS, DHCP and DNS to also promote users and assign
+                             them to different group policies regarding security.</p>
+                    </div>
+            </div>
+            <div class="project-col">
+                <img src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="layer">
+                        <h3>DATABASE CONCEPTS</h3>
+                        <h4>In progress</h4>
+                        <p>This was one of my first assignments for the my bachelors degree and the aim of this project was
+                             to analyse how data is used in a business, identify the data requirements and then design
+                              and create a database solution to meet the requirements for the business. 
+                        </p>
+                    </div>
+            </div>
+            <div class="project-col">
+                <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg">
+                    <div class="layer">
+                        <h3>STATIC WEB APP</h3>
+                        <h4>Completed - October 13th 2022</h4>
+                        <p>For this assignment I was tasked with creating a static portfolio website using HTML and CSS
+                            and is actually the website you are currently on.
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+                                                                  <!-- Footer -->
     <section id="footer">
     <div class="footer-row">
         <div class="footer-left">
-            <h1>Contact</h1>
+            <h1>CONTACT</h1>
             <p><i class="fa fa-map-marker"></i>322 Hardy Street, Nelson 7010</p>
-            <p><i class="fa fa-phone"></i>0271234567</p>
+            <p><i class="fa fa-phone"></i>0273410746</p>
             <p><i class="fa fa-paper-plane"></i>Jackson-hayes@live.nmit.ac.nz</p>
         </div>
         <div class="footer-right">
-            <h1>Follow</h1>
+            <h1>FOLLOW</h1>
             <p><a href="https://github.com/JacksoonHayes"><i class="fa fa-github"></i>Github</a></p>
-            <p><a href="/SRC/404-page/error.html"><i class="fa fa-linkedin"></i>LinkedIn</a></p>
-            <p><a href="/SRC/404-page/error.html"><i class="fa fa-facebook"></i>Facebook</a></p>
-            <p><a href="/SRC/404-page/error.html"><i class="fa fa-instagram"></i>Instagram</a></p>
+            <p><a href="/SRC/404-page/error.html"><i class="fa fa-linkedin"></i>LinkedIn (In progess)</a></p>
+            <p><a href="/SRC/404-page/error.html"><i class="fa fa-instagram"></i>Instagram (In progess)</a></p>
         </div>
     </div>
     </section>
